@@ -28,6 +28,9 @@ def complex_taskflow():
     def end():
         print('End task')
 
+    @task()
+    def end2():
+        print('This is the real end')
     order_data = extract()
     order_summary = transform(order_data)
 
